@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Mupel Clock",
+    "slug": "mupel-clock",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.mupel.clock",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "SYSTEM_ALERT_WINDOW",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_SPECIAL_USE",
+        "POST_NOTIFICATIONS",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      "./plugins/withFloatingTimer.js",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#8B5CF6"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ec489416-f1c9-4cc9-821f-e26214b69d65"
+      }
+    }
+  }
+}
